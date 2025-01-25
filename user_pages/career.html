@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities</title>
+    <link rel="stylesheet" href="./../css/career.css">
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="heading">
+                <div class="burger">
+                    <button id="burger-button" popovertarget="nav-pop">
+                        <img src="./icons/burger_menu.png" alt="Menu" id="b" />
+                    </button>
+
+                    <div id="nav-pop" popover>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <form>
+                    <label id="head">Elevate Your Events, Elevate Your Dreams...!</label>
+                    <input id="search" type="text" name="name" placeholder="search..." />
+                    <img src="./../icons/search.png" alt="search img" id="search-icon" />
+                    <img src="./../icons/account.png" alt="person image" id="login" />
+                </form>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="./../index.html">HOME</a></li>
+                <li><a href="./pages/services.html">SERVICES</a></li>
+                <img src="./../icons/logo.png" alt="Logo" />
+                <li><a href="./pages/gallery.html">GALLERY</a></li>
+                <li><a href="./pages/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="career-intro">
+            <h1>Career Opportunities</h1>
+            <p>Join our team and be a part of creating unforgettable events!</p>
+        </section>
+
+        <section class="job-listings">
+            <div class="job">
+                <h3>Event Planner</h3>
+                <p>Responsible for planning and executing events from start to finish according to requirements, target audience, and objectives.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="job">
+                <h3>Marketing Specialist</h3>
+                <p>Develop and implement marketing strategies to promote events and increase brand awareness.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="job">
+                <h3>Customer Service Representative</h3>
+                <p>Provide excellent customer service to clients, addressing their needs and resolving any issues.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="job">
+                <h3>Logistics Coordinator</h3>
+                <p>Coordinate all aspects of logistics for events, ensuring smooth operations and timely delivery of materials.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="job">
+                <h3>Creative Designer</h3>
+                <p>Design creative concepts and visuals for events, ensuring a memorable experience for attendees.</p>
+                <button>Apply Now</button>
+            </div>
+        </section>
+
+        <section class="application-form">
+            <h2>Apply Now</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="position">Position</label>
+                <select id="position" name="position" required>
+                    <option value="event-coordinator">Event Coordinator</option>
+                    <option value="marketing-specialist">Marketing Specialist</option>
+                    <option value="customer-service-representative">Customer Service Representative</option>
+                    <option value="logistics-coordinator">Logistics Coordinator</option>
+                    <option value="creative-designer">Creative Designer</option>
+                </select>
+
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Planner. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> | 
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> | 
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/97270005ce.js" crossorigin="anonymous"></script>
+</body>
+</html>
