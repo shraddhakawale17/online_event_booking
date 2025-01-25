@@ -1,0 +1,201 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+   
+}
+
+
+.services-intro {
+    text-align: center;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #b38600;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.services-intro p {
+    color:#5d776c ;
+    
+}
+
+.services-intro h1{
+    font-family: myfont;
+    font-size: 40px;
+}
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color:#5d776c ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; 
+    
+}
+
+.service img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+   
+}
+.service h3 {
+    font-size: 1.4rem;
+    color: #b38600;
+    margin-bottom: 10px;
+    background-color: #f1d1c2;
+    font-family: myfont;
+    
+}
+.service a{
+    text-decoration: none;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.service img:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); 
+
+}
+@font-face {
+    font-family: myfont;
+    src: url("./../fonts/font.otf");
+  }
+
+  /*Phones*/
+@media (max-width: 480px) {
+    .services-list {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .service {
+        width: 100%; 
+    }
+
+    .service img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .service h3 {
+        font-size: 1rem; 
+    }
+
+    .service p {
+        font-size: 0.8rem;
+    }  
+
+    .footer {
+        display: none;
+      }
+      .p-footer {
+        height: 450px;
+        width: 100%;
+        background-color: rgb(252, 219, 176);
+        position: relative;
+        top: 180px;
+        display: flex;
+        justify-content: center;
+      }
+      .p-footer-line {
+        height: 10px;
+        width: 80%;
+        background-color: #088178;
+      }
+      .p-footer-btns {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 20px;
+        gap: 50px;
+      }
+      .p-footer-btns button {
+        height: 35px;
+        width: 150px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        background-color: #088178;
+        color: white;
+      }
+}
+
+  /* Tablets */
+@media (min-width:481px) and (max-width: 768px) {
+    .services-list {
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .service {
+        width: 45%; 
+    }
+
+    .service img {
+        width: 175px; 
+        height: 175px;
+    }
+
+    .service h3 {
+        font-size: 1.1rem;
+    }
+
+    .service p {
+        font-size: 0.85rem;
+    }
+
+    p-footer {
+        display: none;
+      }
+    
+}
+
+  /* Laptops */
+@media (min-width:769px) and (max-width: 2000px) {
+    .services-list {
+        justify-content: space-around;
+    }
+
+    .service {
+        width: 30%; 
+    }
+
+    .service img {
+        width: 190px;
+        height: 190px;
+    }
+    .p-footer {
+        display: none;
+      }
+}

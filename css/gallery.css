@@ -1,0 +1,110 @@
+
+  .container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:  #ebceca;
+}
+.item{
+    width: 300px;
+    height: 200px; 
+    margin: 10px;
+    border-radius: 10px;
+    border: solid rgb(228, 227, 227);
+    }
+.event1{
+
+    width:300px;
+    height: 200px;
+    border-radius:5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.event1:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.simple-header {
+  
+    padding: 5px;
+    text-align: center;
+    background-color:  #ebceca;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.simple-header h2 {
+    margin: 0;
+    Font-family:myfont;
+    font-size: 40px;
+    color: #b38600; 
+    cursor: pointer;
+}
+.simple-header h2:hover{
+    Font-family:myfont;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+
+}
+@font-face {
+    font-family: myfont;
+    src: url("./../fonts/font.otf");
+  }
+
+
+
+/* Mobile */
+@media screen and (max-width: 370px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .simple-header h2 {
+        font-size: 40px;
+    }
+    .container .item:nth-last-child(-n+2) 
+    {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 371px) and (max-width: 703px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item {
+        width: 45%; 
+    }
+
+    .simple-header h2 {
+        font-size: 40px;
+    }
+    
+}
+
+/* Laptop */
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .item {
+        width: 300px;
+    }
+
+    .simple-header h2 {
+        font-size: 40px;
+    }
+}
+
