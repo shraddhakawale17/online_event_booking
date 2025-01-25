@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/64b4f5a37c.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+AU+VIC+Guides&family=Playwrite+IE+Guides&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <title>Event Planner</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+AU+VIC+Guides&family=Playwrite+CO+Guides&family=Playwrite+IE+Guides&family=Yatra+One&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap");
+  </style>
+  <style>
+    /* .navbar {
+      background-image: url("././image/home_img/poster-flower-Photoroom.png");
+      position: relative;
+    } */
+    .navbar ul {
+      position: relative;
+      top: 150px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #088179bd;
+    }
+    .navbar img {
+      height: 150px;
+      padding-left: 10px;
+      position: relative;
+      bottom: 10px;
+      left: 10px;
+    }
+    .navbar ul li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      justify-content: space-evenly;
+      list-style-type: none;
+      color: #088179bd;
+      font-size: 25px;
+      font-family: "crimson Pro";
+      padding-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .navbar ul li:hover {
+      transition: 0.2s;
+      padding: 7px;
+      font-size: 27px;
+      text-decoration: underline;
+      text-underline-offset: 7px;
+      text-decoration-thickness: 3px;
+      color: #088178;
+    }
+    .container-1 {
+      display: flex;
+
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .container {
+      display: flex;
+      margin-top: 25px;
+      width: 68%;
+      height: 450px;
+      justify-content: center;
+      gap: 50px;
+      position: relative;
+      top: 180px;
+    }
+    .container img {
+      width: 20%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: all ease-in-out 0.5s;
+    }
+    .container img:hover {
+      width: 40%;
+    }
+    .box {
+      display: flex;
+      height: 500px;
+      width: 70%;
+      border: 9px solid#5d776c;
+      margin-top: 50px;
+      margin-left: 50px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-wrap: wrap;
+      background-color: white;
+      box-shadow: 2px 2px 5px;
+      cursor: pointer;
+      transition: 0.9s;
+      top: 260px;
+    }
+    .box:hover {
+      transition: box-shaow 0.9s;
+      box-shadow: 8px 8px 12px;
+    }
+    .box h1 {
+      font-size: 100px;
+      position: absolute;
+      top: 10px;
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      margin: 0;
+      z-index: 1;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .box h1:hover {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      transform: scale(1.1);
+    }
+    .inner-box {
+      display: flex;
+      height: 400px;
+      width: 40%;
+      border: 1px solid rgb(0, 0, 0);
+      position: relative;
+      left: 400px;
+      top: 150px;
+      background-image: url("./image/home_img/p1.jpg");
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+      transition: 0.3s;
+    }
+    .inner-box:hover {
+      transition: all ease-in-out 0.5s;
+      filter: brightness(0.7);
+      transform: scale(1.1);
+    }
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      position: relative;
+      top: 230px;
+      display: inline-flex;
+    }
+    .header:hover {
+      transform: scale(1.1);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    @font-face {
+      font-family: myfont;
+      src: url("./fonts/font.otf");
+    }
+    #H1 {
+      font-size: 50px;
+      font-family: "myfont", sans-serif;
+      font-weight: 900;
+      word-spacing: 10px;
+      color: #ccaf66;
+      z-index: 1;
+    }
+    #H2 {
+      font-size: 15px;
+      line-height: 20px;
+      font-family: "Crimson Pro", serif;
+      word-spacing: 4px;
+      color: #5d776c;
+      word-spacing: 8px;
+    }
+    #H3 {
+      display: flex;
+      padding-top: 60px;
+      padding-left: 20px;
+      margin-right: 180px;
+      position: absolute;
+      top: 40px;
+      font-weight: 600;
+      font-family: "Crimson Pro", serif;
+      line-height: 25px;
+    }
+    .job {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 100px;
+      right: 100px;
+      font-family: "Crimson Pro", serif;
+      color: rgba(0, 0, 0, 0.68);
+    }
+    .job h2 {
+      line-height: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .job a {
+      text-decoration: none;
+      color: #6a6a6a;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .job a:hover {
+      transform: scale(1.1);
+      color: #088178;
+    }
+    .job h2:hover {
+      color: rgba(0, 0, 0, 0.954);
+      transform: scale(1.1);
+    }
+    .back-img {
+      height: 400px;
+      width: 400px;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      left: 90%;
+      margin-left: 50px;
+      bottom: 130px;
+      background-image: url("image/home_img/p2.jpg");
+      box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+      border: 1px solid rgb(0, 0, 0);
+      transition: 0.3s;
+    }
+
+    .back-img:hover {
+      transition: all ease-in-out 0.5s;
+      filter: brightness(0.7);
+      transform: scale(1.1);
+    }
+    .events {
+      margin-top: 100px;
+      height: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: 300px;
+    }
+    .E1 {
+      color: white;
+      margin-left: 50px;
+      margin-right: 50px;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+    .E1 b {
+      position: relative;
+      top: 15px;
+      font-size: 25px;
+      font-family: "myfont";
+      color: antiquewhite;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .E1 b:hover {
+      text-shadow: 2px 2px 4px#ccaf66;
+      transform: scale(1.1);
+    }
+    #event-1 {
+      background-image: url("image/home_img/Haldi.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 45px;
+      margin-left: 150px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #event-1:hover {
+      transform: scale(1.1);
+    }
+    #event-2 {
+      background-image: url("image/home_img/wedding.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 45px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #event-2:hover {
+      transform: scale(1.1);
+    }
+    #event-3 {
+      background-image: url("image/home_img/ring_ceremony.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin-right: 150px;
+      top: 45px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #event-3:hover {
+      transform: scale(1.1);
+    }
+    #event-4 {
+      background-image: url("image/home_img/birthday.jpeg");
+      background-size: cover;
+      background-position: center;
+      margin-left: 150px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #event-4:hover {
+      transform: scale(1.1);
+    }
+    #event-5 {
+      background-image: url("image/home_img/consort.jpeg");
+      background-size: cover;
+      background-position: center;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #event-5:hover {
+      transform: scale(1.1);
+    }
+    #event-6 {
+      background-image: url("image/home_img/Conference.jpeg");
+      background-size: cover;
+      background-position: center;
+      margin-right: 150px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #event-6:hover {
+      transform: scale(1.1);
+    }
+    .event-select {
+      position: absolute;
+      top: 10px;
+    }
+    .event-select p {
+      font-size: 50px;
+      font-family: "myfont";
+      color: #e0a84d;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .event-select p:hover {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    /* phone */
+    @media (max-width: 600px) {
+      .navbar ul li {
+        display: none;
+      }
+      .top input {
+        display: none;
+      }
+      #nav-pop {
+        background-color: rgba(198, 139, 61, 0.879);
+        position: fixed;
+        margin-top: 45px;
+        height: 100vh;
+        width: 150px;
+        font-size: 25px;
+        list-style-type: none;
+        line-height: 100px;
+        border: 1px solid black;
+        padding-left: 10px;
+        font-weight: 600;
+        border: none;
+        font-family: "crimson Pro";
+      }
+      #nav-pop ul li a {
+        text-decoration: none;
+        color: #088178;
+      }
+      #nav-pop ul li:hover {
+        transition: 0.2s;
+        padding: 7px;
+        font-size: 27px;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 3px;
+        color: #088178;
+      }
+      .burger {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+      }
+      .burger button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+      .burger img {
+        height: 25px;
+        width: 25px;
+      }
+      #login {
+        margin-right: 20px;
+      }
+      #search-icon {
+        margin-left: 15px;
+      }
+      .top label {
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      #search-icon {
+        display: none;
+      }
+      .poster img {
+        display: none;
+      }
+      /* poster */
+      /* .container-1 {
+        display: flex;
+        height: 100%; 
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        top: 130px;
+      } */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 350px;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 100px;
+        top: 130px;
+        background-size: cover;
+        background-position: center;
+        animation: backgroundChange 25s infinite;
+      }
+      @keyframes backgroundChange {
+        0%,
+        17% {
+          background-image: url("./image/home_img/img1.jpeg");
+        }
+        20%,
+        33% {
+          background-image: url("./image/home_img/img2.jpeg");
+        }
+        40%,
+        48% {
+          background-image: url("./image/home_img/img3.jpg");
+        }
+        60%,
+        65% {
+          background-image: url("./image/home_img/img4.jpeg");
+        }
+        80%,
+        81% {
+          background-image: url("./image/home_img/img5.jpeg");
+        }
+        100%,
+        100% {
+          background-image: url("./image/home_img/img6.jpeg");
+        }
+      }
+      .container img {
+        display: none;
+      }
+      /* heading */
+      .header {
+        position: relative;
+        top: 180px;
+      }
+      #H1 {
+        font-size: 25px;
+        position: absolute;
+        color: #e0a84d;
+      }
+      #H2 {
+        position: absolute;
+        top: 10px;
+        margin: 5px;
+        word-spacing: 5px;
+      }
+      /* carrier */
+      .box {
+        display: none;
+      }
+      .carrier-phone {
+        height: 500px;
+        width: 100%;
+        position: relative;
+        top: 250px;
+      }
+      .cont {
+        height: 90%;
+        width: 90%;
+        display: flex;
+        margin: 25px;
+        position: absolute;
+        background-color: #4edcd312;
+        box-shadow: 2px 2px 5px;
+        cursor: pointer;
+        transition: all 0.9s ease;
+        border: 8px solid #5d776c;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .cont:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.5);
+      }
+      .cont h1 {
+        font-family: "myfont", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        top: 5px;
+        left: 25%;
+        color: #ccaf66;
+        transition: color 0.5s ease;
+      }
+      .cont h1:hover {
+        color: #e0a84d;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .cont h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: transform 0.5s ease, color 0.3s ease;
+        font-size: 25px;
+        color: #6a6a6a;
+      }
+      .cont h2:hover {
+        color: black;
+        font-size: 15px;
+        padding-left: 20px;
+      }
+      .phone-job {
+        color: #8b9890;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      .phone-job i {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 50px;
+        color: #5d776c;
+      }
+      .phone-job:hover {
+        color: black;
+        transform: scale(1.1);
+      }
+      /* .img1 {
+        height: 125px;
+        width: 125px;
+        background-color: #088178;
+        border: 1px solid rgb(0, 0, 0);
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        bottom: 100px;
+        background-image: url("image/home_img/p1.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      } */
+      .img1:hover {
+        filter: brightness(0.7);
+        transform: rotate(5deg) scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      /* .img2 {
+         height: 125px;
+        width: 125px;
+        background-color: #088178;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 50px;
+        right: 15px;
+        bottom: 100px;
+        background-image: url("image/home_img/p2.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; 
+      }  */
+      /* .img2:hover {
+        filter: brightness(0.7);
+        transform: rotate(-5deg) scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      } */
+      /* event-select */
+      .event-select {
+        display: none;
+      }
+      .events {
+        display: none;
+      }
+      .events b {
+        display: none;
+      }
+      .p-events {
+        position: relative;
+        top: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: #e0a84d;
+      }
+      .p-event-select {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 35px;
+        font-family: "myfont";
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .p-event-select:hover {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .p-events b {
+        color: #e0a84d;
+        font-family: "myfont";
+        position: relative;
+        bottom: 100px;
+        font-size: 35px;
+      }
+      .p-events a {
+        text-decoration: none;
+      }
+      .p-events b:hover {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .P-E1 {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .P-E1:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+      }
+      #P-event-1 {
+        background-image: url("./image/home_img/Haldi.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      #P-event-2 {
+        background-image: url("./image/home_img/wedding.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      #P-event-3 {
+        background-image: url("./image/home_img/ring_ceremony.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      #P-event-4 {
+        background-image: url("./image/home_img/birthday.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      #P-event-5 {
+        background-image: url("./image/home_img/consort.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      #P-event-6 {
+        background-image: url("./image/home_img/Conference.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    /* tablet */
+    @media (min-width: 601px) and (max-width: 800px) {
+      .top img {
+        display: none;
+      }
+      #nav-pop {
+        display: none;
+      }
+      .burger {
+        display: none;
+      }
+      .carrier-phone {
+        display: none;
+      }
+      .p-events {
+        display: none;
+      }
+      .p-event-select {
+        display: none
+    }
+  }
+    /* laptop */
+    @media (min-width: 801px) and (max-width: 2000px) {
+      #b img {
+        display: none;
+      }
+      #nav-pop {
+        display: none;
+      }
+      .burger {
+        display: none;
+      }
+      .navbar ul li {
+        margin-left: 100px;
+      }
+      .carrier-phone {
+        display: none;
+      }
+      .p-events {
+        display: none;
+      }
+      .p-event-select {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div class="top">
+      <div class="heading">
+        <div class="burger">
+          <button id="burger-button" popovertarget="nav-pop">
+            <img src="./icons/burger_menu.png" alt="Menu" id="b" />
+          </button>
+          <div id="nav-pop" popover>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="./pages/services.html">SERVICES</a></li>
+              <li><a href="./pages/gallery.html">GALLERY</a></li>
+              <li><a href="./pages/contact.html" target="new">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <form>
+          <label id="head">Elevate Your Events, Elevate Your Dreams...!</label>
+          <input id="search" type="text" name="name" placeholder="search..." />
+          <img src="././icons/search.png" alt="search img" id="search-icon" />
+          <a href="./pages/about.html"
+            ><img src="././icons/account.png" alt="person image" id="login"
+          /></a>
+        </form>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html" target="new">HOME</a></li>
+        <li><a href="./pages/services.html" target="new">SERVICES</a></li>
+        <img src="././icons/logo.png" />
+        <li><a href="./pages/gallery.html">GALLERY</a></li>
+        <li><a href="./pages/contact.html" target="new">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="container-1">
+      <div class="container">
+        <img src="./image/home_img/img1.jpeg" id="img1" />
+        <img src="./image/home_img/img2.jpeg" id="img2" />
+        <img src="./image/home_img/img3.jpg" id="img3" />
+        <img src="./image/home_img/img4.jpeg" id="img4" />
+        <img src="./image/home_img/img5.jpeg" id="img5" />
+        <img src="./image/home_img/img6.jpeg" id="img6" />
+      </div>
+    </div>
+    <div class="main">
+      <div class="header">
+        <pre id="H1">Elevating  Every  Occasion</pre>
+        <pre id="H2">
+  Providing Curated Luxury Events for the Pacific NW & Beyond</pre
+        >
+      </div>
+    </div>
+    <div class="box">
+      <div class="back-img"></div>
+      <h1 id="H1">Work With Us</h1>
+      <h3 id="H3">
+        we believe that every event is an opportunity to create lasting
+        memories. We bring together creativity, precision, and dedication to
+        transform visions into unforgettable experiences. Whether it's a
+        corporate conference, a wedding, or a large-scale festival, our team
+        works tirelessly to ensure every detail is perfect. As part of our team,
+        you'll have the chance to contribute to events that make an impact and
+        leave a lasting impression.
+      </h3>
+      <div class="job">
+        <h2>
+          <a href="./pages/career.html" target="new"
+            ><i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Event Planner</a
+          >
+        </h2>
+        <h2>
+          <a href="./pages/career.html" target="new"
+            ><i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Event Coordinator</a
+          >
+        </h2>
+        <h2>
+          <a href="./pages/career.html" target="new"
+            ><i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Event Marketing Specialist</a
+          >
+        </h2>
+        <h2>
+          <a href="./pages/career.html" target="new"
+            ><i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Wedding Planner</a
+          >
+        </h2>
+        <h2>
+          <a href="./pages/career.html" target="new"
+            ><i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Corporate Event Manager</a
+          >
+        </h2>
+      </div>
+      <div class="inner-box"></div>
+    </div>
+    <div class="carrier-phone">
+      <div class="cont">
+        <h1>Work With Us</h1>
+        <div class="phone-job">
+          <h2>
+            <a href="./pages/career.html" target="new"
+              ><i class="fa-solid fa-arrow-right">
+                &nbsp; Event Coordinator</i
+              ></a
+            >
+          </h2>
+          <h2>
+            <a href="./pages/career.html" target="new">
+              <i class="fa-solid fa-arrow-right">
+                &nbsp; Event Marketing Specialist</i
+              ></a
+            >
+          </h2>
+          <h2>
+            <a href="./pages/career.html" target="new"
+              ><i class="fa-solid fa-arrow-right"> &nbsp;Wedding Planner</i></a
+            >
+          </h2>
+          <h2>
+            <a href="./pages/career.html" target="new"
+              ><i class="fa-solid fa-arrow-right"
+                >&nbsp;Corporate Event Manager</i
+              ></a
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="img1"></div>
+      <div class="img2"></div>
+    </div>
+    <!-- event-laptop -->
+    <div class="events">
+      <div class="event-select">
+        <p>Events</p>
+      </div>
+      <div class="E1" id="event-1">
+        <a href="./pages/price.html" target="new"><b>Haldi</b></a>
+      </div>
+      <div class="E1" id="event-2">
+        <a href="./pages/price.html" target="new"><b>Wedding</b></a>
+      </div>
+      <div class="E1" id="event-3">
+        <a href="./pages/price.html" target="new"><b>Ring Ceremony</b></a>
+      </div>
+      <div class="E1" id="event-4">
+        <a href="./pages/price.html" target="new"><b>Birthday Party</b></a>
+      </div>
+      <div class="E1" id="event-5">
+        <a href="./pages/price.html" target="new"><b>Concert</b></a>
+      </div>
+      <div class="E1" id="event-6">
+        <a href="./pages/price.html" target="new"><b>Offficial Meetings</b></a>
+      </div>
+    </div>
+    <!-- event for mobile -->
+    <div class="p-events">
+      <div class="p-event-select">
+        <p>Events</p>
+      </div>
+      <div class="P-E1" id="P-event-1">
+        <a href="./pages/price.html" target="new"><b>Haldi</b></a>
+      </div>
+      <div class="P-E1" id="P-event-2">
+        <a href="./pages/price.html" target="new"><b>Wedding</b></a>
+      </div>
+      <div class="P-E1" id="P-event-3">
+        <a href="./pages/price.html" target="new"><b>Ring Ceremony</b></a>
+      </div>
+      <div class="P-E1" id="P-event-4">
+        <a href="./pages/price.html" target="new"><b>Birthday Party</b></a>
+      </div>
+      <div class="P-E1" id="P-event-5">
+        <a href="./pages/price.html" target="new"><b>Concert</b></a>
+      </div>
+      <div class="P-E1" id="P-event-6">
+        <a href="./pages/price.html" target="new"><b>Offficial Meetings</b></a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-line"></div>
+      <div class="footer-events">
+        <div class="footer-btns">
+          <a href="./pages/review.html" target="new"
+            ><button id="btn-1">Feedback</button></a
+          >
+          <a href="./pages/terms.html" target="new"
+            ><button id="btn-2">Terms And Conditions</button></a
+          >
+        </div>
+        <ul>
+          <b>BRIDLE</b>
+          <li>Wedding</li>
+          <li>Haldi</li>
+          <li>Ring Ceremony</li>
+        </ul>
+        <ul>
+          <b>CELEBRATIONS</b>
+          <li>Party</li>
+          <li>Concert</li>
+          <li>Birthday Celebration</li>
+        </ul>
+        <ul>
+          <b>OFFICIALS</b>
+          <li>Official Meeting</li>
+          <li>Company anniversary</li>
+          <li>Company Awards</li>
+        </ul>
+      </div>
+      <img src="./icons/logo.png" alt="footer logo" />
+      <div class="media">
+        <a href="https://www.instagram.com/" target="new"
+          ><i class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="new"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://github.com/satyamrk18/icp10-css-github-project-2-EventPlanner.git"
+          target="new"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/" target="new"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a href="https://x.com/?lang=en" target="new"
+          ><i class="fa-brands fa-twitter fa-2xl"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- phone footer -->
+    <footer class="p-footer">
+      <div class="p-footer-line"></div>
+      <div class="p-footer-btns">
+        <a href="./pages/review.html" target="new"
+          ><button id="btn-1">Feedback</button></a
+        >
+        <a href="./pages/terms.html" target="new"
+          ><button id="btn-2">Terms And Conditions</button></a
+        >
+      </div>
+      <div class="list">
+        <ul>
+          <b>BRIDLE</b>
+          <li>Wedding</li>
+          <li>Haldi</li>
+          <li>Ring Ceremony</li>
+        </ul>
+        <ul>
+          <b>CELEBRATIONS</b>
+          <li>Party</li>
+          <li>Concert</li>
+          <li>Birthday Celebration</li>
+        </ul>
+        <ul>
+          <b>OFFICIALS</b>
+          <li>Official Meeting</li>
+          <li>Company anniversary</li>
+          <li>Company Awards</li>
+        </ul>
+        <img src="./icons/logo.png" alt="footer logo" />
+      </div>
+      <div class="p-media">
+        <a href="https://www.instagram.com/" target="new"
+          ><i class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="new"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://github.com/satyamrk18/icp10-css-github-project-2-EventPlanner.git"
+          target="new"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/" target="new"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a href="https://x.com/?lang=en" target="new"
+          ><i class="fa-brands fa-twitter fa-2xl"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

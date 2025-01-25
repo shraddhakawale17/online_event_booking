@@ -1,0 +1,166 @@
+body{
+    background-color:  #eeeee4;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    padding: 20px ;
+}
+
+.receipt-body{
+    position: relative;
+    height: 500px;
+  
+}
+
+.receipt-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
+   
+}
+
+.receipt-header{
+    background-color: #f1d1c2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.address{
+    text-align: center;
+    color: #5d776c;
+}
+
+.color-box{
+    height: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #5d776c;
+    
+}
+
+span{
+    background-color: #ebceca;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    color: #5d776c;
+    margin: 40px 0 80px 0;
+    font-size: 25px;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.detail-key{
+    color: gray;
+}
+
+.detail-value{
+    font-weight: bold;
+    border-bottom: 1px dashed gray;
+    width: 200px;
+}
+
+
+.stamp-container{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+
+}
+
+.signature{
+    text-align: right;
+    margin: 40px;
+    color: gray;
+}
+
+.stamp{
+    height: 150px;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    transform: rotate(10deg);
+}
+
+.receipt-footer{
+    border-top: 2px dashed grey;
+    
+}
+
+.bottom{
+    margin-top: 5px;
+}
+
+.receipt-end{
+    height: 85px;
+    background-color: #f1d1c2;
+    color: #5d776c;
+    text-align: center;
+    font-size: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px 0;
+}
+
+@media screen and (max-width:520px) {
+    img{
+       
+        height: 80px;
+       
+    }
+
+    span{
+        padding: 5px;
+    }
+    
+    .title{
+        font-size: 15px;
+    }
+
+    .detail-key{
+        font-size: 10px;
+    }
+    
+    .detail-value{
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .signature{
+       font-size: 10px;
+       margin-right: 10px;
+    }
+    
+    .stamp{
+        height: 80px;
+    }   
+    
+    .receipt-body{
+        height: 350px;
+    }
+
+    .receipt-footer p{
+        font-size: 8px;
+    }
+
+    .receipt-end{
+        height: 20px;
+        font-size: 15px;
+    }
+
+    
+}

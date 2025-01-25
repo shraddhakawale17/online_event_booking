@@ -1,0 +1,262 @@
+@font-face {
+    font-family: myfont;
+    src: url("./../fonts/font.otf");
+  }
+  body{
+    background-color: #ebceca ;
+  }
+
+  .review-head{
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: myfont;
+    src: url("./../fonts/font.otf");
+    color:  #dfbc61;
+    font-size: 65px;
+    padding-bottom:none;
+    padding-top: 15px;
+    cursor: pointer;  
+    transition: 0.3s;
+
+  }
+  .review-smallhead{
+    position: relative;
+    top: 130px;
+    text-align: center;
+    /* font-family: myfont; */
+    /* src: url("./../fonts/font.otf"); */
+    font-family: "Crimson Pro", serif;
+    color:  #088178;
+    font-size: 18px;
+    padding-top:none ;
+    padding: bottom 15px ;
+    margin-bottom: 25px;
+    transition: 0.3s;
+  }
+  .review-container{
+    position: relative;
+    /* top: 150px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 0px black solid;
+    border-radius:10px ;
+    height: 320px;
+    width: 420px;
+    background-color: #5d776c;
+    box-shadow: 5px 6px 12px;;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+.head{
+  position: relative;
+  left: 160px;
+  font-family: myfont;
+  font-size: 20px;
+  color: #dfbc61;
+ 
+ 
+  
+  
+  
+}
+.head-discription{
+
+  position: relative;
+  bottom: 30px;
+  padding: 10px;
+  padding-top: none;
+  padding-bottom: none;
+  text-align: justify;
+  font-family: "Crimson Pro", serif;
+  color:white ;
+  font-size: 17px;
+}
+.img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: 10px;
+  right: 190px;
+  position: relative;
+  box-shadow:  0px 0px 14px black;
+  
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:center;
+  
+  
+  
+}
+.review-star{
+  position: relative;
+  top: 30px;
+  text-align: center;
+  word-spacing: 3px;
+  color: gold;
+}
+
+.review-head:hover{
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.container:hover{
+  transform: scale(1.05);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); 
+}
+
+ /* phone */
+ @media (max-width: 600px){.review-head{
+ 
+  position: relative;
+  top:-800px;
+  text-align: center;
+  font-family: myfont;
+  src: url("./../fonts/font.otf");
+  color:  #dfbc61;
+  font-size: 65px;
+  padding-bottom:none;
+  padding-top: 15px;
+  cursor: pointer;  
+  transition: 0.3s;
+}
+.review-head:hover{
+   transform: scale(1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+
+}
+.navbar{
+  background-image: url("./../image/home_img/poster_flower_Photoroom.png");
+  z-index: 1;
+
+}
+.review-smallhead{
+  position: relative;
+    top: -800px;
+    text-align: center;
+    font-family: "Crimson Pro", serif;
+    color:  #088178;
+    font-size: 18px;
+    padding-top:none ;
+    padding: bottom 15px ;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+.review-container{
+  position: relative;
+  top: -800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+.container{
+ 
+  height: 320px;
+  width: 390px;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  
+}
+ }
+
+ /* tablet */
+ @media  (min-width:601px) and (max-width:800px){ 
+  .poster-img{
+    display: none;
+  }
+  .review-head{
+    position: relative;
+    top: 130px;
+    font-size: 75px;
+    cursor: pointer;  
+    transition: 0.3s;
+
+  }
+  .review-smallhead{
+    position: relative;
+    top: 130px;
+    font-size: 20px;
+    padding-top:none ;
+    padding: bottom 15px ;
+    margin-bottom: 25px;
+    transition: 0.3s;
+  }
+ 
+ .review-container{
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+.container{
+  height: 320px;
+  width: 620px;
+  transition: 0.3s;
+  cursor: pointer;
+  
+}
+.img{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: 5px;
+  right: 300px;
+ 
+  
+}
+.head{
+  position: relative;
+  left: 150px;
+  font-family: myfont;
+  font-size: 30px;
+  color: #dfbc61;
+ }
+ .head-discription{
+font-size: 20px;
+position: relative;
+bottom: 10px;
+padding: 10px;
+}
+.review-star{
+  top: 30px;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+ }
+ /* destop */
+@media (min-width: 801px) and (max-width: 2000px) { 
+  .poster-img{
+    display: none;
+  }
+  
+ }
