@@ -6,7 +6,7 @@ body {
 .container {
 	width: 800px;
 	margin: 40px auto;
-	background-color: #fff;
+	background-color: #ebceca;
 	padding: 20px;
 	border: 1px solid #ddd;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ textarea {
 
 input[type="submit"] {
 	background-color: #4CAF50;
-	color: #fff;
+	color: #ebceca;;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
@@ -56,7 +56,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: #3e8e41;
+	background-color: #ebceca;;
 }
 
 select {
