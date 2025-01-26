@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Planning Admin Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .dashboard-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.dashboard-header h1 {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+.dashboard-header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dashboard-header li {
+	margin-right: 20px;
+}
+
+.dashboard-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.events-section, .bookings-section, .users-section {
+	margin-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+}
+
+th {
+	background-color: #f0f0f0;
+}
+
+
+</style>
+<body>
+	<div class="dashboard-container">
+		<div class="dashboard-header">
+			<h1>Event Planning Admin Dashboard</h1>
+			<ul>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Bookings</a></li>
+				<li><a href="#">Users</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</div>
+		<div class="dashboard-content">
+			<div class="events-section">
+				<h2>Events</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Event Name</th>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Venue</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Events data will be displayed here -->
+					</tbody>
+				</table>
+			</div>
+			<div class="bookings-section">
+				<h2>Bookings</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Booking ID</th>
+							<th>Event Name</th>
+							<th>Date</th>
+							<th>Time</th>
+							<th>User</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Bookings data will be displayed here -->
+					</tbody>
+				</table>
+			</div>
+			<div class="users-section">
+				<h2>Users</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>User ID</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Users data will be displayed here -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

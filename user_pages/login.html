@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>login page</title>
-  <link rel="stylesheet" href="./../css/login.css ">
+	<title>Login | Event Planning</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <form action="#">
-      <h2>Login</h2>
-        <div class="input-field">
-        <input type="text" required>
-        <label>Enter your email</label>
-      </div>
-      <div class="input-field">
-        <input type="password" required>
-        <label>Enter your password</label>
-      </div>
-      <div class="forget">
-        <label for="remember">
-          <input type="checkbox" id="remember">
-          <p>Remember me</p>
-        </label>
-        <a href="#">Forgot password?</a>
-      </div>
-      <a href="./../index.html"><button>log In</button></a>
-      <div class="register">
-        <p>Don't have an account? <a href="./../index.html">Register</a></p>
-      </div>
-    </form>
-  </div>
+	<div class="login-container">
+		<h1>Login</h1>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+			<input type="submit" value="Login">
+			<p>Don't have an account? <a href="register.html">Register here</a></p>
+		</form>
+	</div>
 </body>
 </html>
+
+
