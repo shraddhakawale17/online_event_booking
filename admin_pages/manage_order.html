@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.order-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#order-table th, #order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#order-table th {
+    background-color: #f0f0f0;
+}
+
+.view-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+</style>
+<body>
+    <div class="order-container">
+        <h1>Manage Orders</h1>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Event Name</th>
+                    <th>Customer Name</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ORD001</td>
+                    <td>Concert</td>
+                    <td>John Doe</td>
+                    <td>2022-01-01</td>
+                    <td>Pending</td>
+                    <td><button class="view-btn">View</button> <button class="cancel-btn">Cancel</button></td>
+                </tr>
+                <tr>
+                    <td>ORD002</td>
+                    <td>Conference</td>
+                    <td>Jane Doe</td>
+                    <td>2022-01-15</td>
+                    <td>Confirmed</td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+

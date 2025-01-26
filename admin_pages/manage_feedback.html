@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Feedback</title>
+</head>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.feedback-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#feedback-table th, #feedback-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#feedback-table th {
+    background-color: #f0f0f0;
+}
+
+.delete-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #3e8e41;
+}
+
+#delete-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+#delete-modal h2 {
+    margin-top: 0;
+}
+
+</style>
+<body>
+    <div class="feedback-container">
+        <h1>Manage Feedback</h1>
+        <table id="feedback-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Feedback</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shraadha Kawale</td>
+                    <td>shraddha@gmail.com.com</td>
+                    <td>Great event!</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Shubhangi Raskar</td>
+                    <td>shubhu@gmail.com</td>
+                    <td>Excellent organization!</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="delete-modal">
+        <h2>Delete Feedback</h2>
+        <p>Are you sure you want to delete this feedback?</p>
+        <button id="delete-btn">Delete</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+</body>
+</html>
+
+
