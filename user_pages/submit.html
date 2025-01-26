@@ -1,50 +1,25 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>submit</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
-  </head>
-    <style>
-      body {
-        text-align: center;
-        padding: 40px 0;
-        background: #EBF0F5;
-      }
-        h1 {
-          color: #88B04B;
-          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-          font-weight: 900;
-          font-size: 40px;
-          margin-bottom: 10px;
-        }
-        p {
-          color: #404F5E;
-          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-          font-size:20px;
-          margin: 0;
-        }
-
-      i {
-        color: #9ABC66;
-        font-size: 100px;
-        line-height: 400px;
-        margin-left:-15px;
-      }
-      .card {
-        background: white;
-        padding: 60px;
-        border-radius: 4px;
-        box-shadow: 0 2px 3px #C8D0D8;
-        display: inline-block;
-        margin: 0 auto;
-      }
-    </style>
-    <body>
-      <div class="card">
-      <div style="border-radius:200px; height:400px; width:400px; background: #F8FAF5; margin:20px auto;">
-        <i>✓</i>
-      </div>
-        <h1>Successful</h1> 
-        <p>Booking Confirmed:<br/> Your Outdoor Adventure Awaits!</p>
-      </div>
-    </body>
+<head>
+	<title>Submit | Event Planning</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="submit-container">
+		<h1>Submit Your Event Details</h1>
+		<form>
+			<label for="event-name">Event Name:</label>
+			<input type="text" id="event-name" name="event-name"><br><br>
+			<label for="event-date">Event Date:</label>
+			<input type="date" id="event-date" name="event-date"><br><br>
+			<label for="event-time">Event Time:</label>
+			<input type="time" id="event-time" name="event-time"><br><br>
+			<label for="event-location">Event Location:</label>
+			<input type="text" id="event-location" name="event-location"><br><br>
+			<label for="event-description">Event Description:</label>
+			<textarea id="event-description" name="event-description"></textarea><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
 </html>
